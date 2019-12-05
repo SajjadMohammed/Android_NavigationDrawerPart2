@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/homeItem"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+        <item android:id="@+id/settingsItem"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings_black_24dp"/>
+        <item android:id="@+id/aboutItem"
+            android:title="About"
+            android:icon="@drawable/ic_info_black_24dp"/>
+    </group>
+
+
+    <item android:title="SubMenu">
+
+        <menu>
+            <item
+                android:title="Send"
+                />
+            <item
+                android:title="Share"
+                app:actionLayout="@layout/custom_item"
+                />
+            <item
+                android:title="Mail-Us"
+                />
+        </menu>
+
+    </item>
+
+</menu>
